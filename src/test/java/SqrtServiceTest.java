@@ -6,7 +6,7 @@ import ru.netology.SqrtService;
 public class SqrtServiceTest {
 
     @ParameterizedTest
-    @CsvFileSource(files="src/test/java/resources/sqr.csv")
+    @CsvFileSource(files = "src/test/java/resources/sqr.csv")
     public void shouldCalcExact(int expected, int low, int higt) {
         SqrtService service = new SqrtService();
 
